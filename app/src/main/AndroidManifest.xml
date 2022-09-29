@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aran.githubappusersub3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/github_mark_light_32px"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/github_mark_light_32px"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GithubApp">
+        <activity
+            android:name="com.aran.githubappusersub3.ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aran.githubappusersub3.ui.activity.FavoriteUserActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aran.githubappusersub3.ui.activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aran.githubappusersub3.ui.activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.aran.githubappusersub3.ui.activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
